@@ -1,0 +1,83 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+body {
+  background: rgb(12, 18, 74);
+  background: linear-gradient(
+    90deg,
+    rgba(12, 18, 74, 0.8463760504201681) 25%,
+    rgba(82, 0, 77, 1) 75%
+  );
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.container {
+  width: 100%;
+  height: 300px;
+  max-width: 500px;
+  padding: 20px;
+  position: relative;
+  border-radius: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#time {
+  color: blanchedalmond;
+  height: 150px;
+  width: 500px;
+  font-size: 90px;
+  text-align: center;
+  line-height: 150px;
+  margin: 30px auto 10px auto;
+}
+button {
+  background: none;
+  color: rgb(228, 228, 228);
+  border-color: rgb(228, 228, 228);
+  border-style: solid;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: inline-block;
+  height: 40px;
+  width: 90px;
+  margin-top: 10px;
+  padding: 10px 0.75rem;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  line-height: 10px;
+  text-align: center;
+}
+li {
+  color: white;
+  border-bottom: 1px solid beige;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 25px;
+  padding-top: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.stars {
+  position: fixed;
+  z-index: -1;
+  background-image: url("./images/stars.png");
+  width: 100%;
+  height: 100%;
+  animation: move 20s linear infinite;
+}
+@keyframes move {
+  to {
+    transform: translateX(100%);
+  }
+}
